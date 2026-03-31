@@ -216,6 +216,134 @@ Security testing checks if the application is protected against threats, unautho
 
 Security testing is especially critical for banking, healthcare, and e-commerce applications.
 
+# Software Testing Notes (Till STLC)
+
+## What I Covered
+I have completed testing concepts till STLC along with some important practical topics.
+
 ---
+
+## Regression Testing
+Regression testing means re-testing the application after changes (bug fixes or new features) to make sure existing functionality is not affected.
+
+### Types of Regression Testing
+
+- Unit Regression Testing  
+  Testing only the modified part or module.
+
+- Regional Regression Testing  
+  Testing the modified module along with related areas.
+
+- Full Regression Testing  
+  Testing the complete application. This is time-consuming but ensures full stability.
+
+---
+
+## Smoke Testing
+Smoke testing is basic testing to check whether the build is stable or not.
+
+- Performed after every new build  
+- If smoke testing fails, the build is rejected  
+
+---
+
+## Sanity Testing
+Sanity testing is done after small changes or bug fixes.
+
+- Focuses on specific functionality  
+- Narrow and deep approach  
+- Faster than full regression  
+
+---
+
+## Exploratory Testing
+Exploratory testing is done without predefined test cases.
+
+- Based on tester knowledge and understanding  
+- Helps in finding hidden or unexpected bugs  
+
+---
+
+## Monkey Testing
+Monkey testing is random testing without any logic.
+
+- Random clicks and inputs  
+- Objective is to break the system  
+
+---
+
+## Ad Hoc Testing
+Ad hoc testing is informal testing without documentation.
+
+- Based on experience  
+- Quick way to identify defects  
+
+---
+
+## Test Design Techniques
+
+### 1. Equivalence Partitioning
+Input data is divided into valid and invalid groups. Testing is done using one value from each group.
+
+Example:  
+If range is 1 to 100  
+Valid: 1 to 100  
+Invalid: less than 1 and greater than 100  
+
+---
+
+### 2. Boundary Value Analysis
+Testing is done at boundary values since most defects occur there.
+
+Example:  
+If range is 1 to 100  
+Test values: 0, 1, 2, 99, 100, 101  
+
+---
+
+### 3. Decision Table Testing
+Used when multiple conditions exist. Logic is represented in a table format.
+
+Example:
+
+| Condition | Rule 1 | Rule 2 |
+|----------|--------|--------|
+| A        | True   | False  |
+| B        | True   | True   |
+| Output   | X      | Y      |
+
+---
+
+### 4. State Transition Testing
+Used when system behavior depends on different states.
+
+Example:  
+Login system  
+State: Logged Out to Logged In  
+Multiple invalid attempts may lead to Account Locked state  
+
+---
+
+### 5. Error Guessing
+Based on experience and intuition to find defects.
+
+Example:  
+- Empty input fields  
+- Invalid data formats  
+- Division by zero  
+- Special characters  
+
+---
+
+## My Understanding
+Regression testing ensures stability after changes.  
+Smoke testing checks if the build is usable.  
+Sanity testing checks specific functionality quickly.  
+Equivalence partitioning and boundary value analysis help reduce test cases.  
+State transition testing is useful for workflow-based systems.  
+Error guessing improves with experience.
+
+---
+
 
 *Notes by Nikhil | QA Learning Journey | 2026*
