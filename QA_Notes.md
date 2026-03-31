@@ -216,8 +216,6 @@ Security testing checks if the application is protected against threats, unautho
 
 Security testing is especially critical for banking, healthcare, and e-commerce applications.
 
-# Software Testing Notes (Till STLC)
-
 ## What I Covered
 I have completed testing concepts till STLC along with some important practical topics.
 
